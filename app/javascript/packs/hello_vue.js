@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import App from './app.vue'
 
 Vue.component('demo-grid', {
   template: '#grid-template',
@@ -20,7 +19,7 @@ Vue.component('demo-grid', {
     }
   },
   computed: {
-    filterdData: function() {
+    filteredData: function() {
       var sortKey = this.sortKey
       var filterKey = this.filterKey && this.filterKey.toLowerCase()
       var order = this.sortOrders[sortKey] || 1
